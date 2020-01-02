@@ -1,0 +1,28 @@
+{
+  "name": "tanikaze",
+  "version": "1.0.0",
+  "description": "Weeb image api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "discord",
+    "discordbot",
+    "images",
+    "weeb",
+    "api"
+  ],
+  "author": "ex",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.596.0",
+    "bcrypt": "^3.0.7",
+    "chalk": "^3.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "moment": "^2.24.0",
+    "mongoose": "^5.8.3",
+    "shortid": "^2.2.15"
+  }
+}

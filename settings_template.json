@@ -1,0 +1,13 @@
+{
+  "mongo": {
+    "host": "localhost",
+    "user": "tanikaze",
+    "pass": "superpass",
+    "db": "tanikaze"
+  },
+  "aws": {
+    "bucketName": "uwu",
+    "userKey": "owo",
+    "userSecret": "ewe"
+  }
+}
