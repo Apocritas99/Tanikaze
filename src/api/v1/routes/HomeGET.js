@@ -10,9 +10,11 @@ class HomeGET {
   }
 
   async run(req, res) {
+    const count = await this.database.Image.estimatedDocumentCount();
     return res.status(200).json({
       version: version,
       message: 'Bienvenido a Tanikaze, tu servicio de weebs.',
+      images: count,
       status: 200
     });
   }

@@ -1,4 +1,5 @@
 const AWS = require('aws-sdk');
+
 const Logger = require('./TanikazeLog');
 
 class TanikazeBucket {

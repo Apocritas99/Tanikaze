@@ -12,7 +12,14 @@ class ImageRandomGET {
 
   async run(req, res) {
     const agg = this.database.Image.aggregate().cursor({});
-    agg.match({ type: req.query.type });
+
+    if (req.query.nsfw === undefined || req.query.nsfw === 'false')
+      req.query.nsfw = false;
+
+    if (req.query.nsfw === 'true')
+      req.query.nsfw = true;
+
+    agg.match({'type': req.query.type, 'nsfw': req.query.nsfw});
     agg.sample(1);
 
     const images = await this.handleCursor(agg.exec());

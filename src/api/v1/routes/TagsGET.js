@@ -1,6 +1,6 @@
 class TagsGET {
   constructor(controller) {
-    this.path = '/images/tags';
+    this.path = '/tags';
     this.router = controller.router;
     this.database = controller.database;
 
